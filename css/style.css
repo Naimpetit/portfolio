@@ -1,0 +1,160 @@
+:root {
+  /* Backgrounds */
+  --bg-main: #0b0b12;
+  --bg-surface: #151522;
+  --bg-elevated: #1f1f35;
+
+  /* Text */
+  --text-primary: #e6e6f2;
+  --text-secondary: #a8a8c0;
+  --text-muted: #6b6b8a;
+
+  /* Accent (purple vibes) */
+  --accent-primary: #6d28d9;
+  --accent-secondary: #8b5cf6;
+  --accent-glow: #a78bfa;
+
+  /* Borders & UI */
+  --border: #2a2a40;
+  --shadow: rgba(0, 0, 0, 0.6);
+}
+
+/* === GLOBAL === */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* === TITLES === */
+h1, h2, h3, h4 {
+  color: var(--text-primary);
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--accent-glow);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* === TEXT === */
+p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+small {
+  color: var(--text-muted);
+}
+
+/* === CONTAINERS === */
+.card {
+  background: var(--bg-surface);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px var(--shadow);
+}
+
+/* === BUTTONS === */
+button {
+  background: var(--accent-primary);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: var(--accent-secondary);
+  box-shadow: 0 0 10px var(--accent-glow);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Secondary button */
+.button-secondary {
+  background: transparent;
+  border: 1px solid var(--accent-secondary);
+  color: var(--accent-secondary);
+}
+
+.button-secondary:hover {
+  background: var(--accent-secondary);
+  color: white;
+}
+
+/* === LINKS === */
+a {
+  color: var(--accent-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-glow);
+  text-shadow: 0 0 5px var(--accent-glow);
+}
+
+/* === INPUTS === */
+input, textarea {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 0.6rem;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--accent-secondary);
+  box-shadow: 0 0 5px var(--accent-secondary);
+}
+
+/* === SCROLLBAR (optional cool effect) === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-secondary);
+}
+
+/* === GLOW EFFECT UTILITY === */
+.glow {
+  color: var(--accent-glow);
+  text-shadow: 0 0 8px var(--accent-glow);
+}
+
+/* === HOVER CARD EFFECT === */
+.card:hover {
+  border-color: var(--accent-secondary);
+  box-shadow: 0 0 15px var(--accent-secondary);
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}
