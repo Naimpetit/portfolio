@@ -1,0 +1,3 @@
+dans chaque card objectif des compétences
+réf à des projets avec un liens sur une autre pages -> précision du projets sélectionner via bouton dans card
+pages avec tt les projets 
