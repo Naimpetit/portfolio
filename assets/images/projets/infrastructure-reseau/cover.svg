@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#141414"/>
+<rect x="100" y="100" width="1400" height="700" fill="#0a0a0a" stroke="#383838" stroke-width="3"/>
+<rect x="150" y="150" width="600" height="22" fill="#ffffff"/>
+<rect x="150" y="215" width="950" height="14" fill="#666666"/>
+<rect x="150" y="250" width="780" height="14" fill="#444444"/>
+<rect x="150" y="340" width="400" height="250" fill="#1c1c1c" stroke="#383838"/>
+<rect x="580" y="340" width="400" height="250" fill="#1c1c1c" stroke="#383838"/>
+<rect x="1010" y="340" width="400" height="250" fill="#1c1c1c" stroke="#383838"/>
+<text x="150" y="680" fill="#ffffff" font-family="Arial, sans-serif" font-size="46">APERÇU DU PROJET</text>
+</svg>

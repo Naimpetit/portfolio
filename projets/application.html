@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page détaillée du projet Application de gestion — Portfolio Elliot DE LA CHAPELLE.">
+    <title>Application de gestion — Portfolio Elliot DE LA CHAPELLE</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Navigation principale">
+            <a class="brand" href="../index.html"><span>Elliot</span><span>DE LA CHAPELLE</span></a>
+            <div class="nav-links">
+                <a class="nav-link" href="../index.html">Accueil</a>
+                <a class="nav-link" href="../competences.html">Compétences</a>
+                <a class="nav-link" href="../projets.html">Projets</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--
+        ==========================================================
+        MODÈLE DE NOUVEAU PROJET
+        ==========================================================
+        1. Copie ce fichier dans /projets/.
+        2. Renomme-le, par exemple : nouveau-projet.html
+        3. Modifie le titre, la description, les textes et les tags.
+        4. Ajoute les images dans :
+           /assets/images/projets/nouveau-projet/
+        5. Ajoute une carte vers cette page dans projets.html.
+        6. Ajoute cette même carte dans chaque compétence concernée
+           de competences.html.
+        7. Ne modifie pas le CSS ni les autres pages.
+        ==========================================================
+        -->
+
+        <section class="section project-detail-header">
+            <div class="container narrow">
+                <p class="eyebrow">Projet BTS SIO</p>
+                <h1>Application de gestion de cinéma</h1>
+                <p class="lead">
+                    Phase 1 d’un projet C# : une application Windows Forms pour gérer les films, les salles, les genres et les projections d’un cinéma.
+                </p>
+
+                <div class="detail-meta">
+                    <span class="tag">C#</span>
+                    <span class="tag">Windows Forms</span>
+                    <span class="tag">MySQL</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-border">
+            <div class="container detail-layout">
+                <div class="detail-content">
+
+                    <section class="detail-section" id="presentation">
+                        <h2>Présentation</h2>
+                        <p>
+                            Ce projet correspond à la première phase d’une application de gestion de cinéma. L’objectif était de créer une interface simple sous C# permettant de gérer les films, leurs genres, les salles et les projections d’un cinéma.
+                        </p>
+                        <p>
+                            L’application a été développée en Windows Forms avec une base de données MySQL locale. Elle permet de récupérer les informations des films, salles et projections, puis d’enregistrer les données dans la base.
+                        </p>
+                    </section>
+
+                    <section class="detail-section" id="contexte">
+                        <h2>Contexte</h2>
+                        <p>
+                            Ce travail s’inscrit dans le cadre de la première phase d’un projet réalisé en cours de formation. Le besoin était de mettre en place une application fonctionnelle capable de gérer des informations liées au fonctionnement d’un cinéma, sans passer par une solution web.
+                        </p>
+                        <p>
+                            Le projet met en pratique la gestion de données, l’utilisation d’une base de données relationnelle et la création d’une interface utilisateur en C# pour un usage local au sein d’un environnement de bureau.
+                        </p>
+                    </section>
+
+                    <section class="detail-section" id="objectifs">
+                        <h2>Objectifs</h2>
+                        <ul>
+                            <li>Afficher les films et leurs informations principales.</li>
+                            <li>Consulter les genres associés et les projections.</li>
+                            <li>Gérer la structure des salles et les données du cinéma.</li>
+                            <li>Enregistrer les informations dans une base MySQL.</li>
+                        </ul>
+                    </section>
+
+                    <section class="detail-section" id="technologies">
+                        <h2>Technologies utilisées</h2>
+                        <div class="tag-list">
+                            <span class="tag">C#</span>
+                            <span class="tag">Windows Forms</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">ODBC</span>
+                            <span class="tag">Visual Studio</span>
+                        </div>
+                    </section>
+
+                    <section class="detail-section" id="deroulement">
+                        <h2>Déroulement</h2>
+                        <p>
+                            La première étape a consisté à analyser le besoin et à identifier les informations à gérer : les films, les genres, les salles et les projections. Ensuite, j’ai mis en place la connexion à la base de données MySQL via le pilote ODBC.
+                        </p>
+                        <p>
+                            J’ai ensuite développé l’interface graphique avec Windows Forms afin d’afficher les éléments pertinents et de préparer la logique de gestion. La phase suivante a consisté à structurer les données et à vérifier l’enregistrement des informations dans les tables de la base.
+                        </p>
+                        <p>
+                            Enfin, j’ai vérifié le bon fonctionnement du programme en testant l’ajout et la lecture des données. Cette étape a permis de valider le fonctionnement de la logique métier et la cohérence entre l’interface et la base de données.
+                        </p>
+                    </section>
+
+                    <section class="detail-section" id="difficultes">
+                        <h2>Difficultés rencontrées</h2>
+                        <p>
+                            La principale difficulté concernait la connexion à la base de données MySQL depuis une application C# et la gestion des paramètres du pilote ODBC. Il fallait aussi s’assurer que les libellés, les identifiants et les relations entre les tables étaient correctement définis pour que les données soient enregistrées sans erreur.
+                        </p>
+                    </section>
+
+                    <section class="detail-section" id="solutions">
+                        <h2>Solutions</h2>
+                        <p>
+                            J’ai utilisé des objets OdbcConnection et OdbcCommand afin d’établir une connexion sécurisée avec la base de données. Les commandes SQL ont permis de récupérer les informations relatives aux films, aux salles et aux projections, puis d’enregistrer les données dans les tables dédiées.
+                        </p>
+                        <p>
+                            J’ai également organisé l’interface en séparant clairement les actions de chargement des données et d’enregistrement, ce qui a rendu le programme plus lisible et plus facile à maintenir.
+                        </p>
+                    </section>
+
+                    <section class="detail-section" id="resultat">
+                        <h2>Résultat</h2>
+                        <p>
+                            Le projet a abouti à une application fonctionnelle de gestion d’un cinéma, avec une interface utilisateur simple et efficace. L’utilisateur peut gérer les informations liées aux films, aux genres, aux salles et aux projections à partir d’une base de données MySQL.
+                        </p>
+
+                        <div class="gallery">
+                            <figure>
+                                <img src="../assets/images/projets/application/cover.svg" alt="Aperçu de l’application C# de gestion de cinéma">
+                                <figcaption>Vue d’ensemble de l’application : gestion des données de cinéma et exploitation des informations stockées en base.</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <section class="detail-section" id="bilan">
+                        <h2>Bilan</h2>
+                        <p>
+                            Ce projet m’a permis de développer des compétences en C#, en conception d’interfaces et en gestion de données avec une base MySQL. J’ai appris à relier une application desktop à une base de données, à lire des informations depuis la BDD et à enregistrer des données métier dans un contexte concret.
+                        </p>
+                        <p>
+                            Il s’agit d’une bonne première étape dans la création d’applications métier, avec un point fort sur la logique de traitement et la validation des données. Si je devais le perfectionner, j’ajouterais davantage de contrôles sur les saisies, une gestion de messages d’erreurs plus claire et une meilleure ergonomie visuelle.
+                        </p>
+                    </section>
+                </div>
+
+                <aside class="detail-sidebar">
+                    <h2>Compétences associées</h2>
+                    <!--
+                    Remplace / ajoute les liens selon les compétences réellement mobilisées.
+                    Les ancres correspondent aux IDs présents dans competences.html.
+                    -->
+                    <ul>
+                        <li><a href="../competences.html#incidents">02 — Répondre aux incidents et demandes</a></li>
+                        <li><a href="../competences.html#presence-en-ligne">03 — Développer la présence en ligne</a></li>
+                        <li><a href="../competences.html#mode-projet">04 — Travailler en mode projet</a></li>
+                        <li><a href="../competences.html#service">05 — Mettre à disposition un service</a></li>
+                        <li><a href="../competences.html#developpement-professionnel">06 — Développement professionnel</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2026 Elliot DE LA CHAPELLE — Portfolio BTS SIO</p>
+            <a href="mailto:elliot.delachapelle01@gmail.com">elliot.delachapelle01@gmail.com</a>
+        </div>
+    </footer>
+</body>
+</html>
